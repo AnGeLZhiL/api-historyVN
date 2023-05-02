@@ -2,10 +2,10 @@
 
 //use App\Http\Controllers\Api\v1\CategoriesController;
 //use App\Http\Controllers\Api\v1\CitiesController;
-//use App\Http\Controllers\Api\v1\CollectionsController;
 //use App\Http\Controllers\Api\v1\ObjectsController;
 //use App\Http\Controllers\Api\v1\QuestionsController;
 //use App\Http\Controllers\Api\v1\TestsController;
+use App\Http\Controllers\Api\v1\CollectionsController;
 use App\Http\Controllers\Api\v1\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -49,7 +49,7 @@ Route::post('/login', [UserController::class, 'login']); //Login
  * Collection Routers
  */
 
-//Route::get('/collections/{id?}', [CollectionsController::class, 'getAll']);
+Route::get('/collections/{id?}', [CollectionsController::class, 'getAll']);
 
 /*
  * Cities Routers
